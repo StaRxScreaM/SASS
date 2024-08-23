@@ -1,0 +1,61 @@
+.contact {
+  background-color: $background-color;
+  padding: 2rem 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+  }
+
+  &__form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: $secondary-color;
+    @include border-radius;
+    @include box-shadow(#000, 0.1);
+  }
+
+  &__group {
+    margin-bottom: 1rem;
+  }
+
+  &__label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 0.75rem;
+    @include border-radius;
+    border: 1px solid lighten($primary-color, 30%);
+    background-color: #fff;
+    @include transition(border);
+
+    &:focus {
+      border-color: $accent-color;
+      outline: none;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: $accent-color;
+    color: #fff;
+    border: none;
+    @include border-radius;
+    @include transition(background-color);
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}

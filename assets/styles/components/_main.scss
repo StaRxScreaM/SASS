@@ -1,0 +1,16 @@
+.main {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: $background-color;
+
+  &__title {
+    font-size: 3rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: darken($text-color, 20%);
+  }
+}

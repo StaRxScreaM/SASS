@@ -1,0 +1,14 @@
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($accent-color, 10%);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

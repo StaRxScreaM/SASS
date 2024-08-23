@@ -1,0 +1,28 @@
+.navbar {
+  background-color: $primary-color;
+  padding: 1rem;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin: 0 15px;
+  }
+
+  &__link {
+    color: $secondary-color;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    @include transition(color);
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}

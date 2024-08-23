@@ -1,0 +1,70 @@
+.destinations {
+  padding: 2rem 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $primary-color;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  &__item {
+    background-color: $text-color;
+    padding: 1.5rem;
+    position: relative;
+    @include border-radius;
+    @include box-shadow(#000, 0.1);
+    @include transition(all);
+    text-align: center;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__image {
+      @include responsive-img;
+      transition: transform 0.3s ease-in-out;
+      transform-origin: center;
+      z-index: 1;
+    }
+
+    &:hover &__image {
+      transform: scale(1.1);
+    }
+
+    &__name,
+    &__description,
+    &__price {
+      color: white !important; 
+      position: relative;
+      z-index: 3;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}

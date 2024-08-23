@@ -1,0 +1,13 @@
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}

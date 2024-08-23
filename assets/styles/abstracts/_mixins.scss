@@ -1,0 +1,24 @@
+@mixin transition($properties) {
+  transition: $properties $transition-duration ease-in-out;
+}
+
+@mixin box-shadow($color, $opacity: 0.1) {
+  box-shadow: 0 4px 6px rgba($color, $opacity);
+}
+
+@mixin border-radius($radius: $border-radius) {
+  border-radius: $radius;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: $border-radius;
+}

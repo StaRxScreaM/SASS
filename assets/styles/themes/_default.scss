@@ -1,0 +1,18 @@
+body {
+  background-color: #ffffff; // Blanco
+  color: #ffffff; // Blanco para el texto
+  font-family: "Arial", Arial, sans-serif;
+  line-height: 1.6; // Mantiene la línea de texto con una separación adecuada
+}
+
+h1, h2, h3 {
+  color: #ffffff; // Blanco para los encabezados
+}
+
+a {
+  color: #ffffff; // Blanco para los enlaces
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.9); // Blanco con 90% de opacidad al pasar el ratón
+  }
+}
